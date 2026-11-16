@@ -4,6 +4,9 @@
 > 只做索引，不搬运代码。所有条目均为公开开源仓库，点名字直接跳转。
 > 星标为 2026-11-16 快照（GitHub API 实时抓取）；表格里的徽章会自己更新。
 
+📌 **姊妹篇：[
+美股 / 港股深度研究资源库（重点：纳斯达克七姐妹）](./us-hk-deep-research.md)** —— 每家公司的一手 10-K 入口、十年财务数据怎么拉、港股披露易怎么用、单股深研 7 天 SOP。
+
 一份给中文用户用的「找轮子地图」：先看你要干什么（研究 / 回测 / 实盘 / 纯学习），再按分类进。
 
 ---
@@ -22,6 +25,7 @@
 - [9. 机构工具箱](#9-机构工具箱)
 - [10. 四条学习/落地路线](#10-四条学习落地路线)
 - [11. 避坑清单](#11-避坑清单比选框架更重要)
+- [12. 美股 / 港股深度研究（七姐妹）](#12-美股--港股深度研究纳斯达克七姐妹)
 
 ---
 
@@ -75,7 +79,7 @@
 | [AI4Finance-Foundation/FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) | 21.6k | 金融 LLM 微调框架 |
 | [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 13.8k | Agentic Trading OS，自托管 |
 | [AI4Finance-Foundation/FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) | 8.4k | LLM Agent 自动写研报 |
-| [simonlin1212/TradingAgents-astock](https://github.com/simonlin1212/TradingAgents-astock) | 4.0k | 7 位分析师 + A股特色数据（龙虎榜/游资/解禁） |
+| [simonlin212/TradingAgents-astock](https://github.com/simonlin212/TradingAgents-astock) | 4.0k | 7 位分析师 + A股特色数据（龙虎榜/游资/解禁） |
 | [ginlix-ai/LangAlpha](https://github.com/ginlix-ai/LangAlpha) | 2.3k | 「Claude Code for Financial Market」风格 |
 | [wquguru/nof0](https://github.com/wquguru/nof0) | 2.8k | LLM 交易竞技场（Alpha Arena 复现） |
 | [KylinMountain/TradingAgents-AShare](https://github.com/KylinMountain/TradingAgents-AShare) | 0.9k | 15 Agent 机构协作模拟，全流程可视化 |
@@ -282,6 +286,29 @@ akshare 取数 → pandas 清洗 → backtesting.py 单策略
 6. **停更识别**：`backtrader`(2024-08)、`zipline`(2024-02)、`tushare`(2024-03)、`mlfinlab`(2023-10) 均在事实停更区间。
 7. **许可证**：`vectorbt` 开源版带 Commons Clause（禁止商业转售），`backtesting.py` 是 AGPL-3.0。做商业产品前先读 LICENSE。
 8. **数据单一风险**：yfinance 免费但会限流/改接口，生产环境至少双源交叉校验。
+
+---
+
+## 12. 美股 / 港股深度研究（纳斯达克七姐妹）
+
+完整版（含每家公司 10-K 入口、十年数据怎么拉、港股披露易用法、7 天深研 SOP）：
+👉 **[us-hk-deep-research.md](./us-hk-deep-research.md)**
+
+| 公司 | 代码 | 现金牛 | 研究重点 |
+|---|---|---|---|
+| 英伟达 | NVDA | GPU + CUDA 生态 | 客户集中度、订单能见度、毛利率可持续性 |
+| 微软 | MSFT | Azure + Office 订阅 | Azure 增速与 AI 贡献、Copilot 付费渗透 |
+| 苹果 | AAPL | 服务业务 | 服务毛利率、换机周期、低 CapEx 带来的 FCF |
+| 亚马逊 | AMZN | AWS + 广告 | AWS 加速、自研芯片、FCF 被 CapEx 吃掉 |
+| 谷歌 | GOOGL | 搜索广告 + Cloud | 搜索是否被 AI 分流、Cloud 利润率、Waymo 亏损 |
+| Meta | META | 全家桶广告 | 广告单价 vs 展示量、Reality Labs 亏损 |
+| 特斯拉 | TSLA | 整车 + 能源 | 剔除积分的汽车毛利率、FSD 递延收入 |
+
+**三个硬入口**：
+
+1. 一手文件：[SEC EDGAR](https://www.sec.gov/edgar/searchedgar/companysearch)（年报/季报/8-K/代理声明，唯一权威源）
+2. 港股一手：[披露易 HKEXnews](https://www.hkexnews.hk/)（年报、中报、公告、权益披露、CCASS 持股）
+3. 十年财务图：[Macrotrends](https://www.macrotrends.net/)、[stockanalysis.com](https://stockanalysis.com/)、[TIKR](https://www.tikr.com/)（Pro 可看 20–30 年）
 
 ---
 
